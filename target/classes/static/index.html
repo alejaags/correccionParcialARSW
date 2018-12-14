@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperatura</title>
+</head>
+<body>
+
+    <p>Seleccione la medida a la que desea convertir el valor:</p>
+    <select id="selectMed">
+        <option value="celsius">celsius</option>
+        <option value="fahrenheit">fahrenheit</option>
+    </select>
+    <br></br>
+    <p>Ingrese el valor:</p>
+    <input id="val" type="text" size="15" maxlength="30" value="Valor" name="valor">
+    <br></br>
+    <button class="button" onclick="calcularValor.getTempVal()">Calcular</button>
+    <br></br>
+    <p id="resp"></p>
+
+
+
+    <script src="/js/indBackEnd.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+
+
+</body>
+</html>
